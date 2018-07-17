@@ -36,17 +36,6 @@ background-color: #f7c364;
 background-color: #343a40 !important;
 color: white !important;
 }
-/*Diseño FORMULARIO.HTML */
-#formContainer{
-  width: 400px;
-  margin: 0 auto;
-  padding: 30px;
-  border: 1px solid #e4e6e8;
-  background: #FFF;
-}
-.header-background-formulario{
-  background-color: #f7c364 !important;
-}
 .card-deck .card {
   min-width: 220px;
 }
