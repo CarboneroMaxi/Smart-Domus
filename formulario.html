@@ -4,75 +4,75 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
   </head>
   </head>
   <body>
-    <form class="needs-validation" novalidate>
-      <div class="form-row">
-        <div class="col-md-4 mb-3">
-          <label for="validationCustom01">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="validationCustom02">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="validationCustomUsername">Username</label>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroupPrepend">@</span>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow header-background-formulario">
+      <h5 class="my-0 mr-md-auto font-weight-normal"><a class="navbar-brand">
+    <img src="img/culo2.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Smart domus
+  </a>
+  </h5>
+  </div>
+    <div class="container">
+      <h1 class="display-4 encabezados-centrados">Registro</h1>
+      <div id="formContainer">
+        <form class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom01">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
             </div>
-            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
-              Please choose a username.
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom02">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationCustomUsername">Fecha Nacimiento</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Fecha de nacimiento" aria-describedby="inputGroupPrepend" required>
+                <!-- <div class="invalid-feedback">
+                  Please choose a username.
+                </div> -->
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationCustomUsername">Dirección</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Dirección" aria-describedby="inputGroupPrepend" required>
+                <!-- <div class="invalid-feedback">
+                  Please choose a username.
+                </div> -->
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="col-md-6 mb-3">
-          <label for="validationCustom03">City</label>
-          <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-          <div class="invalid-feedback">
-            Please provide a valid city.
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">Email</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="Email" required>
+              <!-- <div class="invalid-feedback">
+                Please provide a valid city.
+              </div> -->
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom04">Contraseña</label>
+              <input type="text" class="form-control" id="validationCustom04" placeholder="Contraseña" required>
+              <!-- <div class="invalid-feedback">
+                Please provide a valid state.
+              </div> -->
+            </div>
           </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <label for="validationCustom04">State</label>
-          <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-          <div class="invalid-feedback">
-            Please provide a valid state.
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <label for="validationCustom05">Zip</label>
-          <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-          <div class="invalid-feedback">
-            Please provide a valid zip.
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-          <label class="form-check-label" for="invalidCheck">
-            Agree to terms and conditions
-          </label>
-          <div class="invalid-feedback">
-            You must agree before submitting.
-          </div>
-        </div>
-      </div>
-      <button class="btn btn-primary" type="submit">Submit form</button>
-    </form>
-
+          <a class="btn btn-outline-dark" href="inicio-usuario.html">Registrarse</a>
+        </form>
+  </div>
+</div>
     <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function() {
