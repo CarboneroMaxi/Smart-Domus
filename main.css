@@ -1,0 +1,60 @@
+html {
+  font-size: 14px;
+}
+body{
+   /*background-image: url("img/fondo13.JPG"); */
+  /*background-size: cover;*/
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+.ocultar-lista{
+list-style-type:none;
+}
+.encabezados-centrados{
+text-align: center;
+}
+.pricing-header {
+  max-width: 700px;
+}
+footer{
+
+}
+.subrayado-no{
+  text-decoration: none !important;
+}
+.card-body{
+background-color: #f7c364;
+}
+/* #header-background{
+  background-color: #f7c364 !important;
+} */
+.background-header{
+background-color: #343a40 !important;
+color: white !important;
+}
+.card-deck .card {
+  min-width: 220px;
+}
+/*Diseño INICIO-USUARIO.HTML */
+.estilo-li-header{
+  color: #343a40!important
+}
+/*Diseño PAGAR-SERVICIOS.HTML */
+.lista-precios{
+width: 250px;
+margin: auto;
+padding: 0;
+text-align: center;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
