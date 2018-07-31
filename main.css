@@ -1,10 +1,12 @@
 html {
   font-size: 14px;
 }
-body{
-   /*background-image: url("img/fondo13.JPG"); */
+
+body {
+  /*background-image: url("img/fondo13.JPG"); */
   /*background-size: cover;*/
 }
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -14,47 +16,96 @@ body{
 .container {
   max-width: 960px;
 }
-.ocultar-lista{
-list-style-type:none;
+
+.ocultar-lista {
+  list-style-type: none;
 }
-.encabezados-centrados{
-text-align: center;
+
+.encabezados-centrados {
+  text-align: center;
 }
+
 .pricing-header {
   max-width: 700px;
 }
-footer{
 
-}
-.subrayado-no{
+footer {}
+
+.subrayado-no {
   text-decoration: none !important;
 }
-.card-body{
-background-color: #f7c364;
+.card-tamaño{
+  width: 80% !important;
 }
+.card-body {
+  background-color: #f7c364;
+}
+
 /* #header-background{
   background-color: #f7c364 !important;
 } */
-.background-header{
-background-color: #343a40 !important;
-color: white !important;
+
+.background-header {
+  background-color: #343a40 !important;
+  color: white !important;
 }
+
 .card-deck .card {
   min-width: 220px;
 }
+
 /*Diseño INICIO-USUARIO.HTML */
-.estilo-li-header{
-  color: #343a40!important
+
+.estilo-li-header {
+  color: #343a40 !important
 }
+
 /*Diseño PAGAR-SERVICIOS.HTML */
-.lista-precios{
-width: 250px;
-margin: auto;
-padding: 0;
-text-align: center;
+
+.lista-precios {
+  width: 250px;
+  margin: auto;
+  padding: 0;
+  text-align: center;
 }
 
-.border-top { border-top: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+/*Pading Styles*/
+.styles-padding{
+  padding: 0px !important;
+}
+/*Prueba*/
+#hexagono3 {
+  height: 250px;
+  margin: -3em 0;
+  overflow: hidden;
+  transform: rotate(120deg);
+  visibility: hidden;
+  width: 19em;
+  background-color: red;
+}
+#hexagono3-1 {
+  height: 100%;
+  overflow: hidden;
+  transform: rotate(-60deg);
+  width: 100%;
+  background-color: red;
+}
+#hexagono3-2 {
+  height: 100%;
+  transform: rotate(-60deg);
+  visibility: visible ;
+  width: 100%;
+  background-color: red;
+}
+.hexagono-father{}
