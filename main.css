@@ -26,6 +26,9 @@ text-align: center;
 footer{
 
 }
+.subrayado-no{
+  text-decoration: none !important;
+}
 .card-body{
 background-color: #f7c364;
 }

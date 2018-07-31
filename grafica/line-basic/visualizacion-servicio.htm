@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Visualización de servicios</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<link href="../../main.css" rel="stylesheet">
+	</head>
+	<body>
+		<style type="text/css">
+		#container {
+			min-width: 310px;
+			max-width: 800px;
+			height: 400px;
+			margin: 0 auto
+		}
+		</style>
+		<div id="header-background" class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+      <h5 class="my-0 mr-md-auto font-weight-normal">
+        <a class="navbar-brand">
+          <img src="../../img/logo.png" width="17%" height="17%" class="d-inline-block align-top" alt="">
+  </a>
+</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark subrayado-no" href="visualizacion-servicio.htm">Inicio</a>
+        <a class="p-2 text-dark subrayado-no" href="../../pagar-servicios.html">Pagar</a>
+        <a class="p-2 text-dark subrayado-no" href="#">Modificar servicios</a>
+      </nav>
+      <li class="nav-item dropdown ocultar-lista">
+        <a class="nav-link dropdown-toggle estilo-li-header" href="#" id="navbarDropdowns" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Hola Usuario!
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Configurar</a>
+          <a class="dropdown-item" href="#">Alertas</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="../../index.html">Salir</a>
+        </div>
+      </li>
+    </div>
+<script src="../highcharts.js"></script>
+<script src="../series-label.js"></script>
+<script src="../exporting.js"></script>
+<script src="../export-data.js"></script>
+
+<div id="container"></div>
+
+
+
+		<script type="text/javascript">
+
+Highcharts.chart('container', {
+
+    title: {
+        text: 'Visualización del consumo de servicioss'
+    },
+
+    yAxis: {
+        title: {
+            text: 'Consumo'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 2010
+        }
+    },
+
+    series: [{
+        name: 'Agua',
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+    },    {
+        name: 'Luz',
+        data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});
+		</script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	</body>
+</html>

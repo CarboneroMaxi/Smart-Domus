@@ -23,9 +23,9 @@
   </a>
 </h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="inicio-usuario.html">Inicio</a>
-        <a class="p-2 text-dark" href="pagar-servicios.html">Pagar</a>
-        <a class="p-2 text-dark" href="#">Modificar servicios</a>
+        <a class="p-2 text-dark subrayado-no" href="inicio-usuario.html">Inicio</a>
+        <a class="p-2 text-dark subrayado-no" href="pagar-servicios.html">Pagar</a>
+        <a class="p-2 text-dark subrayado-no" href="#">Modificar servicios</a>
       </nav>
       <li class="nav-item dropdown ocultar-lista">
         <a class="nav-link dropdown-toggle estilo-li-header" href="#" id="navbarDropdowns" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,8 +41,11 @@
     </div>
 
     <div class="container">
+      <div class="alert alert-success alert-dismissible" id="mostrar-alert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
       <h4 class="mb-3">Payment</h4>
-
           <div class="d-block my-3">
             <div class="custom-control custom-radio">
               <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
@@ -56,10 +59,6 @@
             <div class="col-md-6 mb-3">
               <label for="cc-name">Nombre en la tarjeta</label>
               <input type="text" class="form-control" id="cc-name" placeholder="" required>
-              <small class="text-muted">Full name as displayed on card</small>
-              <div class="invalid-feedback">
-                Name on card is required
-              </div>
             </div>
             <div class="col-md-6 mb-3">
               <label for="cc-number">Número de tarjeta de crédito/débito</label>
@@ -70,23 +69,27 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3 mb-3">
+            <div class="col-md-6 mb-3">
               <label for="cc-expiration">Expiración</label>
               <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
               <div class="invalid-feedback">
                 Expiration date required
               </div>
             </div>
-            <div class="col-md-3 mb-3">
+            <div class="col-md-6 mb-3">
               <label for="cc-expiration">CVV</label>
               <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
               <div class="invalid-feedback">
                 Security code required
               </div>
             </div>
+            <div class="col-md-5 mb-3">
+            </div>
+            <hr class="mb-4">
+            <button type="button" class="btn btn-outline-dark" onclick="continuar_pago()">Continuar con el pago</button>
+            <div class="col-md-5 mb-3">
+            </div>
           </div>
-          <hr class="mb-4">
-          <button class="btn btn-primary btn-lg btn-block" type="submit">Continuar para pagar</button>
         </form>
       </div>
       <footer class="pt-4 my-md-5 border-top">
@@ -136,6 +139,7 @@
     <script src="/js/vendor/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/vendor/holder.min.js"></script>
+    <script src="/js/index.js"></script>
     <script>
       Holder.addTheme('thumb', {
         bg: '#55595c',
